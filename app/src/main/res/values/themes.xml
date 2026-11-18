@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.AppointmentManager" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

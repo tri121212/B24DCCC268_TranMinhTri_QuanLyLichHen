@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quản lý lịch hẹn</string>
+    <string name="login_title">Đăng nhập</string>
+    <string name="username_hint">Tên đăng nhập</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="login_button">Đăng nhập</string>
+    <string name="error_empty_credentials">Vui lòng nhập tên đăng nhập và mật khẩu</string>
+    <string name="error_login_failed">Sai tên đăng nhập hoặc mật khẩu</string>
+
+    <string name="main_title">Danh sách lịch hẹn</string>
+    <string name="add_appointment">Thêm lịch hẹn</string>
+    <string name="stats_format" formatted="false">Tổng số: %d | Đang bật nhắc nhở: %d</string>
+    <string name="reminder_yes">Có nhắc</string>
+    <string name="reminder_no">Không nhắc</string>
+    <string name="reminder_on_label">Đang bật</string>
+    <string name="reminder_off_label">Đang tắt</string>
+
+    <string name="add_title">Thêm lịch hẹn mới</string>
+    <string name="title_hint">Tên lịch hẹn</string>
+    <string name="location_hint">Địa điểm</string>
+    <string name="reminder_switch">Bật nhắc nhở</string>
+    <string name="save_button">Lưu lịch hẹn</string>
+    <string name="error_empty_fields">Tên lịch hẹn và địa điểm không được để trống</string>
+    <string name="error_invalid_time">Thời điểm hẹn phải sau thời điểm hiện tại</string>
+
+    <string name="detail_title">Chi tiết lịch hẹn</string>
+    <string name="back_button">Quay lại</string>
+    <string name="delete_button">Xóa lịch hẹn</string>
+</resources>
