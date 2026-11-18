@@ -84,7 +84,7 @@ public class AppointmentAdapter extends BaseAdapter {
 
         if (apt.getReminder() == 1) {
             holder.tvReminder.setText(context.getString(R.string.reminder_yes));
-            holder.tvReminder.setTextColor(context.getResources().getColor(R.color.blue_primary));
+            holder.tvReminder.setTextColor(context.getResources().getColor(R.color.green_primary));
         } else {
             holder.tvReminder.setText(context.getString(R.string.reminder_no));
             holder.tvReminder.setTextColor(0xFF757575);

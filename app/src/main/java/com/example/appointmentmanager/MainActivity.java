@@ -18,7 +18,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tvStats;
+    private TextView tvStats, tvTotal, tvReminders;
     private ListView lvAppointments;
     private Button btnAddAppointment;
     private DatabaseHelper databaseHelper;
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         databaseHelper = new DatabaseHelper(this);
 
         tvStats = findViewById(R.id.tvStats);
+        tvTotal = findViewById(R.id.tvTotal);
+        tvReminders = findViewById(R.id.tvReminders);
         lvAppointments = findViewById(R.id.lvAppointments);
         btnAddAppointment = findViewById(R.id.btnAddAppointment);
 
@@ -76,7 +78,15 @@ public class MainActivity extends AppCompatActivity {
     private void updateStats() {
         int total = databaseHelper.countAll();
         int reminders = databaseHelper.countReminders();
-        String statsText = getString(R.string.stats_format, total, reminders);
-        tvStats.setText(statsText);
+        if (tvTotal != null) {
+            tvTotal.setText(String.valueOf(total));
+        }
+        if (tvReminders != null) {
+            tvReminders.setText(String.valueOf(reminders));
+        }
+        if (tvStats != null) {
+            String statsText = getString(R.string.stats_format, total, reminders);
+            tvStats.setText(statsText);
+        }
     }
 }
